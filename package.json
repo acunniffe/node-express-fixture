@@ -1,0 +1,15 @@
+{
+  "name": "@useoptic/document-express",
+  "description": "An Optic fixture for documenting Express JS APIs",
+  "author": "@useoptic",
+  "version": "0.1.0",
+  "main": "index.js",
+  "scripts": {},
+  "peerDependencies": {
+    "express": "4.x"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "request": "^2.88.0"
+  }
+}
