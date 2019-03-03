@@ -25,3 +25,7 @@ it('can get a list of users', (done) => {
 
 ```
 3) Consider wrapping the Express App within a shared test fixture so it's easier to integrate Optic with all of your tests.   
+
+
+## Next Steps
+Once you've setup the documenting middleware, [review the Optic docs](https://docs.useoptic.com/#/setup/project-setup) to finish setting up Optic for your API 
