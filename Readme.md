@@ -2,12 +2,11 @@
 Optic's documenting middleware for Express JS. This package supports APIs written in Javascript, Typescript, or ReasonML and can be used with the testing framework of your choice.  
 
 ## Usage
-1) Install as a dev dependency
+Install as a dev dependency
 ```bash
 npm install @useoptic/document-express --save-dev
 ``` 
-
-2) Before testing your Express App, wrap it in the documenting middleware. 
+Before testing your Express App, wrap it in the documenting middleware. 
 ```javascript
 import withOptic from '@useoptic/document-express'
 //Express App used in Production
@@ -24,7 +23,7 @@ it('can get a list of users', (done) => {
 })
 
 ```
-3) Consider wrapping the Express App within a shared test fixture so it's easier to integrate Optic with all of your tests.   
+Consider wrapping the Express App within a shared test fixture so it's easier to integrate Optic with all of your tests.   
 
 
 ## Next Steps
