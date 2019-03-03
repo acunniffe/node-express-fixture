@@ -12,7 +12,7 @@ import withOptic from '@useoptic/document-express'
 //Express App used in Production
 import {app} from '../server.js'
 
-//Using Optic to document your API as your tests run
+//Using Optic to document the API as your tests run
 const appWithOptic = withOptic(app) 
 
 //Example Test
