@@ -37,7 +37,7 @@ module.exports = function withOptic(app) {
 					uri: req.url,
 					method: req.method,
 					headers: req.headers,
-					body: requestBody
+					body: requestBody.join('')
 				}, (err, response, body) => {
 
 					if (!err) {
