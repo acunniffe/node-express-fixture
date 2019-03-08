@@ -37,11 +37,11 @@ module.exports = function withOptic(app) {
 					uri: req.url,
 					method: req.method,
 					headers: req.headers,
-					body: requestBody.join('')
+					body: (Array.isArray(requestBody)) ? requestBody.join('') : requestBody
 				}, (err, response, body) => {
 
 					if (!err) {
-						const statusCode = response.statusCode
+						const statusCode = res.statusCode
 						const interactionId = (body)
 						const url = `/interactions/${interactionId}/status/${statusCode.toString()}`
 						const headers = res.header()._headers
